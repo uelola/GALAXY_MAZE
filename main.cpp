@@ -11,8 +11,8 @@
 #else
 #endif
 
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 600
+#define WINDOW_WIDTH 1200
+#define WINDOW_HEIGHT 1000
 #define TIMER_PERIOD 25
 #define SCALE_SPEED 1.020 // the scale amount applied to the hexagons in every frame
 #define HEXAGON_DELAY 1250 // the time (amount of miliseconds) passed between hexagons
@@ -111,7 +111,7 @@ void displayBackground()
 	for (int i = 0; i < 3; i++)
 	{
 		glPushMatrix();
-		glRotatef(i * 120.0 + rotation, 0, 0, 1);
+		glRotatef(i * 180.0 + rotation, 0, 0, 1);
 		glBegin(GL_TRIANGLES);
 		glVertex2f(0, 0);
 		glVertex2f(-1500 / sqrt(3), -1500);
